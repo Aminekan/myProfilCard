@@ -17,11 +17,22 @@ body{
     flex-direction: column;
     align-items: center;
     min-width: 370px;
-    width: 100%;
     background-color: #fff;
     border-radius: 24px;
-    padding: 25px;
+    padding: 50px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.profilcard::before{
+    content: '';
+    position: absolute;
+    height: 36%;
+    width: 100%;
+    background-color: #4070f4;
+    top: 0;
+    left: 0;
+    border-radius: 24px 24px 0 0;
+
 }
 .image{
     position: relative;
@@ -73,4 +84,51 @@ body{
     margin: 0 8px;
     text-decoration: none;
     background-color: #4070f4;
+}
+
+.profilcard .butttons{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.butttons .button{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    border: none;
+    border-radius: 24px;
+    margin: 0 10px;
+    padding: 8px 24px;
+    background-color: #4070f4;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.butttons .button:hover{
+    background-color: #0e4bf1;
+}
+
+.profilcard .analytics{
+    display: flex;
+    align-items: center;
+    margin-top:25px ;
+    
+}
+
+.analytics .data{
+ display: flex;
+ align-items: center;
+ color: #333;
+ padding: 0 20px;
+ border-right: 2px solid #e7e7e7;
+}
+
+.data i{
+    font-size: 18px;
+    margin-right: 6px;
+}
+
+.data:last-child{
+    border-right: none;
 }
